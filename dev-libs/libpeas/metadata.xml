@@ -6,7 +6,11 @@
     <name>Gentoo GNOME Desktop</name>
   </maintainer>
   <use>
+<<<<<<< HEAD
     <flag name="gjs">Enable GJS support</flag>
+=======
+    <flag name="gjs">Enable GJS support using <pkg>dev-libs/gjs</pkg></flag>
+>>>>>>> e175ecdd2c11 (dev-libs/libpeas: Bump to 2.0.2)
     <flag name="glade">Install the glade catalog</flag>
     <flag name="python">Build support for loading <pkg>dev-lang/python</pkg> plugins</flag>
   </use>
