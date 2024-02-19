@@ -61,7 +61,7 @@ HOMEPAGE="https://pipewire.org/"
 LICENSE="MIT LGPL-2.1+ GPL-2"
 # ABI was broken in 0.3.42 for https://gitlab.freedesktop.org/pipewire/wireplumber/-/issues/49
 SLOT="0/0.4"
-IUSE="${PIPEWIRE_DOCS_USEFLAG} bluetooth elogind dbus doc echo-cancel extra ffmpeg flatpak gstreamer gsettings ieee1394 jack-client jack-sdk liblc3 loudness lv2"
+IUSE="${PIPEWIRE_DOCS_USEFLAG} bluetooth camera elogind dbus doc echo-cancel extra ffmpeg flatpak gstreamer gsettings ieee1394 jack-client jack-sdk liblc3 loudness lv2"
 IUSE+=" modemmanager pipewire-alsa readline roc selinux sound-server ssl system-service systemd test v4l X zeroconf"
 
 # Once replacing system JACK libraries is possible, it's likely that
@@ -129,6 +129,7 @@ RDEPEND="
 		virtual/libusb:1
 	)
 	elogind? ( sys-auth/elogind )
+	camera? ( media-libs/libcamera[gstreamer] )
 	dbus? ( sys-apps/dbus[${MULTILIB_USEDEP}] )
 	echo-cancel? ( >=media-libs/webrtc-audio-processing-1.2:1 )
 	extra? ( >=media-libs/libsndfile-1.0.20 )
@@ -271,7 +272,7 @@ multilib_src_configure() {
 		$(meson_feature loudness ebur128)
 		$(meson_native_use_feature lv2)
 		$(meson_native_use_feature v4l v4l2)
-		-Dlibcamera=disabled # libcamera is not in Portage tree
+		$(meson_feature camera libcamera)
 		$(meson_native_use_feature roc)
 		$(meson_native_use_feature readline)
 		$(meson_native_use_feature ssl raop)
