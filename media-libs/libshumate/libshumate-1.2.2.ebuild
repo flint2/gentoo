@@ -33,6 +33,12 @@ BDEPEND="
 	vala? ( $(vala_depend) )
 "
 
+<<<<<<< HEAD
+=======
+src_unpack() {
+	default
+}
+>>>>>>> 7280fed6a581 (media-libs/libshumate: Bump to 1.2.2)
 src_configure() {
 	local emesonargs=(
 		$(meson_use introspection gir)
