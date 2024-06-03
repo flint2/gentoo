@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>gnome@gentoo.org</email>
+    <name>Gentoo GNOME Desktop</name>
+  </maintainer>
+  <use>
+    <flag name="dvi">Enable the built-in DVI viewer</flag>
+    <flag name="nautilus">Enable property page extension in <pkg>gnome-base/nautilus</pkg></flag>
+    <flag name="spell">Enable inline spell check for annotations via <pkg>app-text/gspell</pkg></flag>
+  </use>
+  <upstream>
+    <remote-id type="gnome-gitlab">GNOME/papers</remote-id>
+  </upstream>
+</pkgmetadata>
