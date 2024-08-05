@@ -18,7 +18,7 @@ DEPEND="
 	>=dev-libs/glib-2.44:2
 	>=gui-libs/gtk-4.15.2:4[introspection?]
 	media-libs/gsound
-	>=gui-libs/libadwaita-1.6_alpha:1
+	>=gui-libs/libadwaita-1.6_beta:1
 	>=x11-libs/libnotify-0.7.0
 	virtual/libudev:=
 	>=sys-power/upower-0.99.14:=
