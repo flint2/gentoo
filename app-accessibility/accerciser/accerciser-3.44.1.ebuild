@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{10..13} )
+PYTHON_COMPAT=( python3_{11..13} )
 PYTHON_REQ_USE="xml(+)"
 
 inherit gnome2 meson python-single-r1
@@ -43,9 +43,22 @@ BDEPEND="
 	virtual/pkgconfig
 "
 
+<<<<<<< HEAD
 src_install() {
 	meson_src_install
 	gnome2_src_install
 	python_fix_shebang "${ED}"
+=======
+src_prepare() {
+	default
+	python_fix_shebang .
+}
+
+
+src_install() {
+	python_fix_shebang "${WORKDIR}/${P}-build"/src/accerciser
+	meson_src_install
+	gnome2_src_install
+>>>>>>> e76b8fb6df00 (app-accessibility/accerciser: Bump to 3.44.1)
 	python_optimize
 }
