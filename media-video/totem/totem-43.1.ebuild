@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
-PYTHON_COMPAT=( python3_{10..12} )
+PYTHON_COMPAT=( python3_{10..13} )
 PYTHON_REQ_USE="threads(+)"
 
 inherit gnome.org gnome2-utils meson virtualx xdg python-single-r1
@@ -95,7 +95,7 @@ src_configure() {
 		-Denable-easy-codec-installation=yes
 		-Denable-python=$(usex python yes no)
 		-Dlibportal=enabled
-		-Dwith-plugins=all
+		-Dwith-plugins=all # in 3.34.1 only builtin and python plugins are left, and python is extra controlled by enable-python
 		$(meson_use gtk-doc enable-gtk-doc)
 		-Dprofile=default
 		-Dinspector-page=false
