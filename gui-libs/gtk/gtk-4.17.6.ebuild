@@ -22,7 +22,7 @@ REQUIRED_USE="
 COMMON_DEPEND="
 	>=dev-libs/glib-2.76.0:2
 	>=x11-libs/cairo-1.18.0[aqua?,glib,svg(+),X?]
-	>=x11-libs/pango-1.52.0[introspection?]
+	>=x11-libs/pango-1.56.0[introspection?]
 	>=dev-libs/fribidi-1.0.6
 	>=media-libs/harfbuzz-2.6.0:=
 	>=x11-libs/gdk-pixbuf-2.30:2[introspection?]
