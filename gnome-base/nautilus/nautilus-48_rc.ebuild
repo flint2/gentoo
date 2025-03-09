@@ -28,7 +28,7 @@ DEPEND="
 	>=gui-libs/gtk-4.17.5:4[introspection?]
 	>=gui-libs/libadwaita-1.6_beta:1
 	>=dev-libs/libportal-0.7:=[gtk]
-	>=x11-libs/pango-1.28.3
+	>=x11-libs/pango-1.56.0
 	selinux? ( >=sys-libs/libselinux-2.0 )
 	>=app-misc/tinysparql-3.0:3
 	cloudproviders? ( >=net-libs/libcloudproviders-0.3.1 )
