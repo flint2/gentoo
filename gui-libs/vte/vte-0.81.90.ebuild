@@ -14,7 +14,7 @@ LICENSE="LGPL-3+ GPL-3+"
 SLOT="2.91-gtk4" # vte_api_version + "-gtk4" in meson.build
 
 KEYWORDS="~amd64 ~arm ~arm64 ~loong ~ppc ~ppc64 ~riscv ~sparc ~x86"
-IUSE="+crypt debug gtk-doc +icu +introspection sixel systemd +vala"
+IUSE="+crypt debug gtk-doc +icu +introspection systemd +vala"
 REQUIRED_USE="
 	gtk-doc? ( introspection )
 	vala? ( introspection )
@@ -78,7 +78,6 @@ src_configure() {
 		-Dgtk3=false
 		-Dgtk4=true
 		$(meson_use icu)
-		$(meson_use sixel)
 		$(meson_use systemd _systemd)
 		$(meson_use vala vapi)
 	)
