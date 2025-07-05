@@ -62,10 +62,9 @@ src_configure() {
 		-Dfribidi=true # pulled in by pango anyhow
 		-Dglade=false
 		-Dgnutls=false
-		-Dgtk3=false
+		-Dgtk3=true
 		-Dgtk4=false
 		-Dicu=false
-		-Dsixel=false
 		$(meson_use systemd _systemd)
 		-Dvapi=false
 	)
