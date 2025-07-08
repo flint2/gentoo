@@ -20,14 +20,14 @@ DEPEND="
 	x11-libs/libdrm
 	>=media-libs/libepoxy-1.4
 	>=dev-libs/glib-2.75:2
-	>=dev-libs/libei-1.3.901
+	>=dev-libs/libei-1.2.0
 	x11-libs/libnotify
 	app-crypt/libsecret
 	>=media-video/pipewire-1.2.0:=
 	app-crypt/tpm2-tss:=
 	rdp? (
 		>=media-libs/nv-codec-headers-11.1.5.0
-		>=net-misc/freerdp-3.15.0:=[server]
+		>=net-misc/freerdp-3.1.0:=[server]
 		>=sys-fs/fuse-3.9.1:3=
 		media-libs/libva
 		>=sys-auth/polkit-122
