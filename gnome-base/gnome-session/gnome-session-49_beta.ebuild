@@ -15,7 +15,7 @@ IUSE="doc elogind systemd X"
 REQUIRED_USE="^^ ( elogind systemd )"
 
 COMMON_DEPEND="
-	>=dev-libs/glib-2.46.0:2
+	>=dev-libs/glib-2.82.0:2
 	X? (
 		>=x11-libs/gtk+-3.22.0:3
 		x11-libs/libICE
