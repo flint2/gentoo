@@ -1,0 +1,14 @@
+--- a/data/default-apps/dash.txt	2025-08-09 14:22:30.000000000 -0300
++++ b/data/default-apps/dash.txt 	2025-08-10 16:33:56.893024859 -0300
+@@ -1,6 +1,10 @@
++chromium-browser-chromium.desktop
++firefox.desktop
++firefox-bin.desktop
++org.gnome.Evolution.desktop
+ org.gnome.Epiphany.desktop
+ org.gnome.Calendar.desktop
++org.gnome.Music.desktop
+ org.gnome.Nautilus.desktop
+ org.gnome.Software.desktop
+ org.gnome.TextEditor.desktop
+-org.gnome.Calculator.desktop
