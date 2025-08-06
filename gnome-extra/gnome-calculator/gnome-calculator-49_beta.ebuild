@@ -43,8 +43,6 @@ src_prepare() {
 	default
 	vala_setup
 	xdg_environment_reset
-	eapply "${FILESDIR}"/don_t_use_development_vala_api.patch
-
 }
 
 src_configure() {
