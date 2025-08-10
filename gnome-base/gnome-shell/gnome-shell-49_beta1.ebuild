@@ -22,9 +22,9 @@ RESTRICT="!test? ( test )"
 DEPEND="
 	>=gnome-extra/evolution-data-server-3.46.0:=
 	>=app-crypt/gcr-3.90.0:4=[introspection]
-	>=dev-libs/glib-2.68:2
+	>=dev-libs/glib-2.85:2
 	>=dev-libs/gobject-introspection-1.49.1:=
-	>=dev-libs/gjs-1.73.1
+	>=dev-libs/gjs-1.85.1
 	>=gui-libs/gtk-4:4[introspection]
 	>=x11-wm/mutter-49_alpha0:0/17[introspection,test?]
 	>=sys-auth/polkit-0.120_p20220509[introspection]
@@ -134,7 +134,8 @@ BDEPEND="
 
 PATCHES=(
 	# Change favorites defaults, bug #479918
-	"${FILESDIR}"/48.0-defaults.patch
+	"${FILESDIR}"/49_beta1-defaults.patch
+	"${FILESDIR}"/49_beta1-gir.patch
 )
 
 src_prepare() {
