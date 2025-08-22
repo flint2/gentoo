@@ -7,7 +7,6 @@ inherit gnome.org gnome2-utils meson xdg
 
 DESCRIPTION="GNOME hexadecimal editor"
 HOMEPAGE="https://gitlab.gnome.org/GNOME/ghex"
-SRC_URI="https://download.gnome.org/sources/ghex/48/ghex-48.beta2.tar.xz"
 
 if [[ ${PV} == 9999 ]]; then
 	inherit git-r3
