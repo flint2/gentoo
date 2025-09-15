@@ -136,7 +136,7 @@ BDEPEND="
 PATCHES=(
 	# Change favorites defaults, bug #479918
 	"${FILESDIR}"/49.0-defaults.patch
-	"${FILESDIR}"/49.0-gjs.patch
+	"${FILESDIR}"/49.0-gir.patch
 )
 
 src_prepare() {
