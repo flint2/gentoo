@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>gnome@gentoo.org</email>
+    <name>Gentoo GNOME Desktop</name>
+  </maintainer>
+  <maintainer type="project">
+    <email>media-sound@gentoo.org</email>
+    <name>Gentoo Sound project</name>
+  </maintainer>
+  <longdescription>
+  </longdescription>
+    Play audio files
+    An audio player that just plays audio files. It doesn't require an organized music 
+	library and won't overload you with tons of functionality.
+  <upstream>
+    <remote-id type="gnome-gitlab">GNOME/decibels</remote-id>
+  </upstream>
+</pkgmetadata>
