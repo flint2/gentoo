@@ -50,6 +50,11 @@ BDEPEND="
 	virtual/pkgconfig
 "
 
+post_src_unpack() {
+	# Fix invalid version string '0.10-dev' -> '0.10.0' to satisfy Meson
+	sed -i "s/version: '0.10-dev'/version: '0.10.0'/" "${S}/meson.build"
+}
+
 src_prepare() {
 	default
 
