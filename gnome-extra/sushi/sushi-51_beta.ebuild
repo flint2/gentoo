@@ -17,6 +17,7 @@ DEPEND="
 	media-libs/libepoxy
 	>=app-text/evince-3.0[introspection]
 	media-libs/freetype:2
+	>=app-text/papers-51_beta
 	>=x11-libs/gdk-pixbuf-2.23.0[introspection]
 	>=dev-libs/glib-2.29.14:2
 	media-libs/gstreamer:1.0[introspection]
