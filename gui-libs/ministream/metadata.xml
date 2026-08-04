@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>gnome@gentoo.org</email>
+    <name>Gentoo GNOME Desktop</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="gnome-gitlab">GNOME/ministream</remote-id>
+  </upstream>
+  <use>
+  <flag name="ascompare">Build as-compare, requires <pkg>dev-libs/libxml2</pkg> <pkg>dev-libs/appstream</pkg></flag>
+  </use>
+</pkgmetadata>
