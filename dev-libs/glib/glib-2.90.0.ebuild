@@ -92,7 +92,7 @@ MULTILIB_CHOST_TOOLS=(
 
 PATCHES=(
 	"${FILESDIR}"/${PN}-2.64.1-mark-gdbus-server-auth-test-flaky.patch
-	"${WORKDIR}"/${PN}-2.88.2-const-whoops.patch
+	#"${WORKDIR}"/${PN}-2.88.2-const-whoops.patch
 )
 
 python_check_deps() {
